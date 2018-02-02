@@ -1,6 +1,8 @@
 <template>
   <div id="app">
-    <router-view id="page"/>
+    <scroll-lock id="page">
+      <router-view/>
+    </scroll-lock>
   </div>
 </template>
 
@@ -37,5 +39,6 @@ export default {
     position: relative;
     overflow: scroll;
     -webkit-overflow-scrolling : touch;
+    background: #FAFAFA;
   }
 </style>

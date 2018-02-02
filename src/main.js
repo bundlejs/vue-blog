@@ -4,7 +4,9 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import VueScrollLock from 'vue-scroll-lock'
+import Icon from 'vue-svg-icon/Icon.vue'
 
+Vue.component('icon', Icon)
 Vue.use(VueScrollLock)
 Vue.config.productionTip = false
 
